@@ -7,20 +7,33 @@
 <!DOCTYPE html>
     <head>
         <meta name="viewport" content="width:=device-wdith, inital-scale=1.0">
+        
+        <!--
+            - style.css: All CSS code for design and formatting of page
+        -->
         <link rel="stylesheet" href="style.css" />
+
         <title>Web Calculator</title>
 
-        <!-- Auto-Refresh for 5 seconds on browsers-->
-        <meta http-equiv="refresh" content="5">
+        <!-- Auto-Refresh for 300 seconds (5 minutes) on browsers-->
+        <meta http-equiv="refresh" content="300">
     </head>
 
     <body>
         <!-- Divison aligns content to the centre-->
         <div align="center">
-            
+
+            <h1>
+                Web Calculator
+            </h1>
+
             <!--Text boxes for inserting values -->
-            <input type="text" id="txtNum01" />
-            <input type="text" id="txtNum02" />
+            <p>
+                <input type="text" id="txtNum01" />
+            </p>
+            <p>
+                <input type="text" id="txtNum02" />
+            </p>
             <br>
 
             <!-- Buttons to select basic math function-->
@@ -32,5 +45,10 @@
             <!-- Resulted outcome is presented via this header-->
             <h2 id="h2Result"></h2>
         </div>
+        
+        <!--
+            - script.js: All codes functionality
+        -->
+        <script src="script.js"></script>
     </body>
 </html>

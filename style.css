@@ -1,3 +1,8 @@
+body
+{
+    background-color: steelblue;
+}
+
 div
 {
     width: 400px;
@@ -7,4 +12,20 @@ div
 #h2Result
 {
     align-content: center;
+}
+
+input
+{
+    font-size: 2em;
+}
+
+h2
+{
+    font-size: 32px;
+    color: black;
+}
+
+button
+{
+    font-size: 2em;
 }
