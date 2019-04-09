@@ -7,22 +7,29 @@
 <!DOCTYPE html>
     <head>
         <meta name="viewport" content="width:=device-wdith, inital-scale=1.0">
-        <meta http-equiv="refresh" content="5">
         <link rel="stylesheet" href="style.css" />
         <title>Web Calculator</title>
+
+        <!-- Auto-Refresh for 5 seconds on browsers-->
+        <meta http-equiv="refresh" content="5">
     </head>
 
     <body>
+        <!-- Divison aligns content to the centre-->
         <div align="center">
+            
+            <!--Text boxes for inserting values -->
             <input type="text" id="txtNum01" />
             <input type="text" id="txtNum02" />
             <br>
 
+            <!-- Buttons to select basic math function-->
             <button id="btnAddition">+</button>
             <button id="btnSubtaction">-</button>
             <button id="btnMultiplication">x</button>
             <button id="btnDivision">÷</button>
 
+            <!-- Resulted outcome is presented via this header-->
             <h2 id="h2Result"></h2>
         </div>
     </body>
