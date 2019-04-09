@@ -6,14 +6,14 @@ minusButton = document.getElementById("btnSubtaction");
 multiplyButton = document.getElementById("btnMultiplication");
 divideButton = document.getElementById("btnDivision");
 
-// Collecting values from both text boxes
-num1 = document.getElementById("txtNum01");
-num2 = document.getElementById("txtNum02");
-
 
 plusFunction = function()
 {
-    sum = num1.value + num2.value;
+    // Collecting values from both text boxes
+    num1 = document.getElementById("txtNum01");
+    num2 = document.getElementById("txtNum02");
+
+    sum = parseInt(num1.value) + parseInt(num2.value);
     
     result = document.getElementById("h2Result");
     result.innerText = sum;
@@ -21,6 +21,10 @@ plusFunction = function()
 
 minusFunction = function()
 {
+    // Collecting values from both text boxes
+    num1 = document.getElementById("txtNum01");
+    num2 = document.getElementById("txtNum02");
+
     sum = num1.value - num2.value;
     
     result = document.getElementById("h2Result");
@@ -29,6 +33,10 @@ minusFunction = function()
 
 multiplyFunction = function()
 {
+    // Collecting values from both text boxes
+    num1 = document.getElementById("txtNum01");
+    num2 = document.getElementById("txtNum02");
+
     sum = num1.value * num2.value;
     
     result = document.getElementById("h2Result");
@@ -37,6 +45,10 @@ multiplyFunction = function()
 
 divideFunction = function()
 {
+    // Collecting values from both text boxes
+    num1 = document.getElementById("txtNum01");
+    num2 = document.getElementById("txtNum02");
+
     sum = num1.value / num2.value;
     
     result = document.getElementById("h2Result");

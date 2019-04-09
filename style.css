@@ -1,17 +1,24 @@
 body
 {
     background-color: steelblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 div
 {
     width: 400px;
     margin: 0 auto;
+    background-color: darkslategray;
+    border-radius: 17.5%;
 }
 
 #h2Result
 {
     align-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: black;
+    border-radius: 12.5%; 
 }
 
 input
