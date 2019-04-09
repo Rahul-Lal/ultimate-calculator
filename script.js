@@ -1,18 +1,18 @@
 var num1, num2, sum, result;
 
-//Functionality for addition button
+// Functionality for addition button
 plusButton = document.getElementById("btnAddition");
 minusButton = document.getElementById("btnSubtaction");
 multiplyButton = document.getElementById("btnMultiplication");
 divideButton = document.getElementById("btnDivision");
 
+// Collecting values from both text boxes
+num1 = document.getElementById("txtNum01");
+num2 = document.getElementById("txtNum02");
+
 
 plusFunction = function()
 {
-
-    num1 = document.getElementById("txtNum01");
-    num2 = document.getElementById("txtNum02");
-    
     sum = num1.value + num2.value;
     
     result = document.getElementById("h2Result");
@@ -21,10 +21,6 @@ plusFunction = function()
 
 minusFunction = function()
 {
-
-    num1 = document.getElementById("txtNum01");
-    num2 = document.getElementById("txtNum02");
-    
     sum = num1.value - num2.value;
     
     result = document.getElementById("h2Result");
@@ -33,10 +29,6 @@ minusFunction = function()
 
 multiplyFunction = function()
 {
-
-    num1 = document.getElementById("txtNum01");
-    num2 = document.getElementById("txtNum02");
-    
     sum = num1.value * num2.value;
     
     result = document.getElementById("h2Result");
@@ -45,10 +37,6 @@ multiplyFunction = function()
 
 divideFunction = function()
 {
-
-    num1 = document.getElementById("txtNum01");
-    num2 = document.getElementById("txtNum02");
-    
     sum = num1.value / num2.value;
     
     result = document.getElementById("h2Result");
