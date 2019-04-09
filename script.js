@@ -13,7 +13,7 @@ plusFunction = function()
     num1 = document.getElementById("txtNum01");
     num2 = document.getElementById("txtNum02");
     
-    sum = parseInt(num1.value) + parseInt(num2.value);
+    sum = num1.value + num2.value;
     
     result = document.getElementById("h2Result");
     result.innerText = sum;
@@ -25,7 +25,7 @@ minusFunction = function()
     num1 = document.getElementById("txtNum01");
     num2 = document.getElementById("txtNum02");
     
-    sum = parseInt(num1.value) - parseInt(num2.value);
+    sum = num1.value - num2.value;
     
     result = document.getElementById("h2Result");
     result.innerText = sum;
@@ -37,7 +37,7 @@ multiplyFunction = function()
     num1 = document.getElementById("txtNum01");
     num2 = document.getElementById("txtNum02");
     
-    sum = parseInt(num1.value) * parseInt(num2.value);
+    sum = num1.value * num2.value;
     
     result = document.getElementById("h2Result");
     result.innerText = sum;
@@ -49,7 +49,7 @@ divideFunction = function()
     num1 = document.getElementById("txtNum01");
     num2 = document.getElementById("txtNum02");
     
-    sum = parseInt(num1.value) / parseInt(num2.value);
+    sum = num1.value / num2.value;
     
     result = document.getElementById("h2Result");
     result.innerText = sum;
