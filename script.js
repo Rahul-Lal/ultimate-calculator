@@ -5,6 +5,7 @@ plusButton = document.getElementById("btnAddition");
 minusButton = document.getElementById("btnSubtaction");
 multiplyButton = document.getElementById("btnMultiplication");
 divideButton = document.getElementById("btnDivision");
+addNumeral = document.getElementById("h2Result");
 
 
 minusFunction = function()
@@ -30,7 +31,6 @@ plusFunction = function()
 
 showResults = function(result)
 {
-    result = document.getElementById("h2Result");
     result.innerText = sum;
 }
 
@@ -46,7 +46,16 @@ gatherNumerals = function()
     return resultObject;
 }
 
+btnOne_Click = function()
+{
+    result = document.getElementById("h2Result");
+    result.innerText += "1";
+}
+
+
+// For Function buttons
 plusButton.addEventListener("click", plusFunction);
 minusButton.addEventListener("click", minusFunction);
 multiplyButton.addEventListener("click", multiplyFunction);
 divideButton.addEventListener("click", divideFunction);
+
