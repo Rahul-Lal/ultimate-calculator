@@ -1,61 +1,65 @@
-var num1, num2, sum, result, resultObject;
+/*
+    - A JS Calculator
+    - Link to Tutorial: https://www.youtube.com/watch?v=UW6wxEyEO7g&list=WL&index=8&t=0s
+    - Date 20/10/2019
+*/
 
-// Functionality for addition button
-plusButton = document.getElementById("btnAddition");
-minusButton = document.getElementById("btnSubtaction");
-multiplyButton = document.getElementById("btnMultiplication");
-divideButton = document.getElementById("btnDivision");
-addNumeral = document.getElementById("h2Result");
+/*
+    ALGORITHM:
+    1.) Listen and capture all button events
+    2.) When event occurs, depending on button, do +, -, x, /
+    3.) For any operation, I have to get values from text boxes too
+    4.) 
+*/
 
+alert('WELCOME')
 
-minusFunction = function()
-{
-    sum = num1.value - num2.value;
+// Addition operations
+btnAddition = document.getElementById('btnAddition');
+console.log(btnAddition);
+
+let additionFunction = function() {
+    alert('ADD');
+    console.log('ADD')
+
+    let numOne = document.getElementById('txtOne');
+    console.log('numOne: ' + numOne.value);
+    let numTwo = document.getElementById('txtTwo');
+    console.log('numTwo: ' + numTwo.value);
+    console.log('(numOne + numTwo): ' + numOne.value + numTwo.value);
+
+    let sum = parseInt(numOne.value) + parseInt(numTwo.value);
+    console.log('sum: ' + sum.toString());
+
+    let result = document.getElementById('txtOutput');
+    result.innerText = sum.toString();
+    console.log('result.innerText: ' + sum.toString())
 }
 
-multiplyFunction = function()
-{
-    sum = num1.value * num2.value;
+btnAddition.addEventListener('click', additionFunction);
+
+// Subtraction operations
+btnSubtraction = document.getElementById('btnSubtraction');
+console.log(btnSubtraction);
+
+let subtractionFunction = function() {
+    alert('SUBTRACT');
+    console.log('SUBTRACT')
+
+    let numOne = document.getElementById('txtOne');
+    console.log('numOne: ' + numOne.value);
+    let numTwo = document.getElementById('txtTwo');
+    console.log('numTwo: ' + numTwo.value);
+    console.log('(numOne + numTwo): ' + numOne.value + numTwo.value);
+
+    let sum = parseInt(numOne.value) - parseInt(numTwo.value);
+    console.log('sum: ' + sum.toString());
+
+    let result = document.getElementById('txtOutput');
+    result.innerText = sum.toString();
+    console.log('result.innerText: ' + sum.toString())
 }
 
-divideFunction = function()
-{
-    sum = num1.value / num2.value;
-}
-
-plusFunction = function()
-{
-
-    sum = parseInt(num1.value) + parseInt(num2.value);
-}
-
-showResults = function(result)
-{
-    result.innerText = sum;
-}
-
-gatherNumerals = function()
-{
-    // Collecting values from both text boxes
-    num1 = document.getElementById("txtNum01").value;
-    num2 = document.getElementById("txtNum02").value;
-    resultObject =  {
-        "Number 1": num1,
-        "Number 2": num2
-    }
-    return resultObject;
-}
-
-btnOne_Click = function()
-{
-    result = document.getElementById("h2Result");
-    result.innerText += "1";
-}
-
-
-// For Function buttons
-plusButton.addEventListener("click", plusFunction);
-minusButton.addEventListener("click", minusFunction);
-multiplyButton.addEventListener("click", multiplyFunction);
-divideButton.addEventListener("click", divideFunction);
-
+btnSubtraction.addEventListener('click', subtractionFunction);
+// btnMultiplication = document.getElementById('btnMultiplication')
+// btnDivision = document.getElementById('btnDivision')

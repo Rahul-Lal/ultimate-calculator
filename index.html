@@ -1,57 +1,29 @@
-<!--
-    -This project is based on the 'How to Build a Simple Calculator with JavaScript' tutorial by the ProgrammingKnowledge channel on Youtube
-    - Youtube Link: https://www.youtube.com/watch?v=UW6wxEyEO7g
-    - ProgrammingKnowledge: https://www.youtube.com/channel/UCs6nmQViDpUw0nuIx9c_WvA
--->
-
 <!DOCTYPE html>
-    <head>
-        <meta name="viewport" content="width:=device-wdith, inital-scale=1.0">
-        
-        <!--
-            - style.css: All CSS code for design and formatting of page
-        -->
-        <link rel="stylesheet" href="style.css" />
+<html lang="en">
 
-        <title>Web Calculator</title>
-
-        <!-- Auto-Refresh for 300 seconds (5 minutes) on browsers
-        <meta http-equiv="refresh" content="300">-->
-
-        <!-- Auto-Refresh for 5 seconds on browsers
-        <meta http-equiv="refresh" content="5">-->
-    </head>
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Calculator | Rahul Lal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class="center">
     <body>
-        <br><br><br>
-        <!-- Divison aligns content to the centre-->
-        <div align="center">
-            <br>
-            <h1>
-                Web Calculator
-            </h1>
+        <input id='txtOne' class='input' type='text' />
+        <br />
+        <input id='txtTwo' class='input' type='text' />
 
-            <!-- Resulted outcome is presented via this header-->
-            <h2 id="h2Result"></h2>
+        <table>
+            <td><button id='btnAddition' class='function'>+</button></td>
+            <td><button id='btnSubtraction' class='function'>-</button></td>
+            <td><button id='btnMultiplication' class='function'>x</button></td>
+            <td><button id='btnDivision' class='function'>÷</button></td>
+        </table>
 
-            <!--Text boxes for inserting values -->
-            <p>
-                <input type="number" id="txtNum01" />
-            </p>
-            <p>
-                <input type="number" id="txtNum02" />
-            </p>
+        <h2 id='txtOutput' class='output' type='text'></h2>
+</div>
+<script src="script.js"></script>
+</body>
 
-            <!-- Buttons to select basic math function-->
-            <button id="btnAddition">+</button>
-            <button id="btnSubtaction">-</button>
-            <button id="btnMultiplication">x</button>
-            <button id="btnDivision">÷</button>
-        </div>
-
-        <!--
-            - script.js: All codes functionality
-        -->
-        <script src="script.js"></script>
-    </body>
 </html>

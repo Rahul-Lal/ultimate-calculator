@@ -1,40 +1,5 @@
-body
-{
-    background-color: steelblue;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-div
+.center
 {
     width: 400px;
     margin: 0 auto;
-    background-color: darkslategray;
-    border-radius: 17.5%;
-    height: 425px;
-}
-
-#h2Result
-{
-    align-content: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: white;
-    background-color: black;
-    border-radius: 12.5%; 
-    height: 75px;
-}
-
-input
-{
-    font-size: 2em;
-}
-
-h2
-{
-    font-size: 32px;
-    color: black;
-}
-
-button
-{
-    font-size: 2em;
 }
