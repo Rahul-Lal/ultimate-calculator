@@ -61,5 +61,51 @@ let subtractionFunction = function() {
 }
 
 btnSubtraction.addEventListener('click', subtractionFunction);
-// btnMultiplication = document.getElementById('btnMultiplication')
-// btnDivision = document.getElementById('btnDivision')
+
+// Multiplication operations
+btnMultiplication = document.getElementById('btnMultiplication')
+console.log(btnMultiplication);
+
+let multiplicationFunction = function() {
+    alert('MULTIPLY');
+    console.log('MULTIPLY')
+
+    let numOne = document.getElementById('txtOne');
+    console.log('numOne: ' + numOne.value);
+    let numTwo = document.getElementById('txtTwo');
+    console.log('numTwo: ' + numTwo.value);
+    console.log('(numOne + numTwo): ' + numOne.value + numTwo.value);
+
+    let sum = parseInt(numOne.value) * parseInt(numTwo.value);
+    console.log('sum: ' + sum.toString());
+
+    let result = document.getElementById('txtOutput');
+    result.innerText = sum.toString();
+    console.log('result.innerText: ' + sum.toString())
+}
+
+btnMultiplication.addEventListener('click', multiplicationFunction);
+
+// Division operations
+btnDivision = document.getElementById('btnDivision')
+console.log(btnDivision);
+
+let divisionFunction = function() {
+    alert('MULTIPLY');
+    console.log('MULTIPLY')
+
+    let numOne = document.getElementById('txtOne');
+    console.log('numOne: ' + numOne.value);
+    let numTwo = document.getElementById('txtTwo');
+    console.log('numTwo: ' + numTwo.value);
+    console.log('(numOne + numTwo): '  + numOne.value + numTwo.value);
+
+    let sum = parseInt(numOne.value) /parseInt(numTwo.value);
+    console.log('sum: ' + sum.toString());
+
+    let result = document.getElementById('txtOutput');
+    result.innerText = sum.toString();
+    console.log('result.innerText: ' + sum.toString())
+}
+
+btnDivision.addEventListener('click', divisionFunction);
