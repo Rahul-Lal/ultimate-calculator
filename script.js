@@ -18,7 +18,7 @@ alert('WELCOME')
 btnAddition = document.getElementById('btnAddition');
 console.log(btnAddition);
 
-let additionFunction = function() {
+let additionFunction = function () {
     alert('ADD');
     console.log('ADD')
 
@@ -42,7 +42,7 @@ btnAddition.addEventListener('click', additionFunction);
 btnSubtraction = document.getElementById('btnSubtraction');
 console.log(btnSubtraction);
 
-let subtractionFunction = function() {
+let subtractionFunction = function () {
     alert('SUBTRACT');
     console.log('SUBTRACT')
 
@@ -66,7 +66,7 @@ btnSubtraction.addEventListener('click', subtractionFunction);
 btnMultiplication = document.getElementById('btnMultiplication')
 console.log(btnMultiplication);
 
-let multiplicationFunction = function() {
+let multiplicationFunction = function () {
     alert('MULTIPLY');
     console.log('MULTIPLY')
 
@@ -90,17 +90,17 @@ btnMultiplication.addEventListener('click', multiplicationFunction);
 btnDivision = document.getElementById('btnDivision')
 console.log(btnDivision);
 
-let divisionFunction = function() {
-    alert('MULTIPLY');
-    console.log('MULTIPLY')
+let divisionFunction = function () {
+    alert('DIVIDE');
+    console.log('DIVIDE')
 
     let numOne = document.getElementById('txtOne');
     console.log('numOne: ' + numOne.value);
     let numTwo = document.getElementById('txtTwo');
     console.log('numTwo: ' + numTwo.value);
-    console.log('(numOne + numTwo): '  + numOne.value + numTwo.value);
+    console.log('(numOne + numTwo): ' + numOne.value + numTwo.value);
 
-    let sum = parseInt(numOne.value) /parseInt(numTwo.value);
+    let sum = parseInt(numOne.value) / parseInt(numTwo.value);
     console.log('sum: ' + sum.toString());
 
     let result = document.getElementById('txtOutput');
