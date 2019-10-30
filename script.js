@@ -2,110 +2,123 @@
     - A JS Calculator
     - Link to Tutorial: https://www.youtube.com/watch?v=UW6wxEyEO7g&list=WL&index=8&t=0s
     - Date 20/10/2019
+    - numeral button JS code: numeral.js
+    - function JS code: function.js
 */
 
 /*
     ALGORITHM:
-    1.) Listen and capture all button events
-    2.) When event occurs, depending on button, do +, -, x, /
-    3.) For any operation, I have to get values from text boxes too
-    4.) 
+    - Add value to 'textbox'
+    - function button pressed
+    - Acknowledge type of function via button
+    - take first value from 'textbox'
+    - Save first value in numOne variable
+    - clears 'textbox'
+    - Add new value to 'textbox'
+    - Press equals
+    - take second value from 'textbox'
+    - Save second value in numTwo variable
+    - checking which function is selected
+    - Add/Subtract/Multiply/Divide numbers based on acknowledgement to create sum
+    - Show sum on textbox
 */
 
-alert('WELCOME')
+alert('WELCOME');
+
+// Two values of textbox
+let numOne = "";
+let numTwo = "";
+let chosenFunction = 0;
+
+const btnAddition = document.getElementById('btnAddition');
+console.log(btnAddition);
+const btnSubtraction = document.getElementById('btnSubtraction');
+console.log(btnSubtraction);
+const btnMultiplication = document.getElementById('btnMultiplication');
+console.log(btnMultiplication);
+const btnDivision = document.getElementById('btnDivision');
+console.log(btnDivision);
+const btnEquals = document.getElementById('btnEquals');
+console.log(btnEquals);
+
+let txtOutput = document.getElementById('txtOutput');
 
 // Addition operations
-btnAddition = document.getElementById('btnAddition');
-console.log(btnAddition);
-
 let additionFunction = function () {
-    alert('ADD');
-    console.log('ADD')
-
-    let numOne = document.getElementById('txtOne');
-    console.log('numOne: ' + numOne.value);
-    let numTwo = document.getElementById('txtTwo');
-    console.log('numTwo: ' + numTwo.value);
-    console.log('(numOne + numTwo): ' + numOne.value + numTwo.value);
-
-    let sum = parseInt(numOne.value) + parseInt(numTwo.value);
-    console.log('sum: ' + sum.toString());
-
-    let result = document.getElementById('txtOutput');
-    result.innerText = sum.toString();
-    console.log('result.innerText: ' + sum.toString())
+        chosenFunction = 1;
+        numOne = document.getElementById('txtOutput');
+        console.log('numOne: ' + numOne.value);
+        txtOutput.innerText = '';
 }
 
-btnAddition.addEventListener('click', additionFunction);
-
 // Subtraction operations
-btnSubtraction = document.getElementById('btnSubtraction');
-console.log(btnSubtraction);
-
 let subtractionFunction = function () {
     alert('SUBTRACT');
     console.log('SUBTRACT')
 
-    let numOne = document.getElementById('txtOne');
     console.log('numOne: ' + numOne.value);
-    let numTwo = document.getElementById('txtTwo');
     console.log('numTwo: ' + numTwo.value);
     console.log('(numOne + numTwo): ' + numOne.value + numTwo.value);
 
     let sum = parseInt(numOne.value) - parseInt(numTwo.value);
     console.log('sum: ' + sum.toString());
 
-    let result = document.getElementById('txtOutput');
     result.innerText = sum.toString();
     console.log('result.innerText: ' + sum.toString())
 }
 
-btnSubtraction.addEventListener('click', subtractionFunction);
-
 // Multiplication operations
-btnMultiplication = document.getElementById('btnMultiplication')
-console.log(btnMultiplication);
-
 let multiplicationFunction = function () {
     alert('MULTIPLY');
     console.log('MULTIPLY')
 
-    let numOne = document.getElementById('txtOne');
     console.log('numOne: ' + numOne.value);
-    let numTwo = document.getElementById('txtTwo');
     console.log('numTwo: ' + numTwo.value);
     console.log('(numOne + numTwo): ' + numOne.value + numTwo.value);
 
     let sum = parseInt(numOne.value) * parseInt(numTwo.value);
     console.log('sum: ' + sum.toString());
 
-    let result = document.getElementById('txtOutput');
     result.innerText = sum.toString();
     console.log('result.innerText: ' + sum.toString())
 }
 
-btnMultiplication.addEventListener('click', multiplicationFunction);
-
 // Division operations
-btnDivision = document.getElementById('btnDivision')
-console.log(btnDivision);
-
 let divisionFunction = function () {
     alert('DIVIDE');
     console.log('DIVIDE')
 
-    let numOne = document.getElementById('txtOne');
     console.log('numOne: ' + numOne.value);
-    let numTwo = document.getElementById('txtTwo');
     console.log('numTwo: ' + numTwo.value);
     console.log('(numOne + numTwo): ' + numOne.value + numTwo.value);
 
     let sum = parseInt(numOne.value) / parseInt(numTwo.value);
     console.log('sum: ' + sum.toString());
 
-    let result = document.getElementById('txtOutput');
     result.innerText = sum.toString();
     console.log('result.innerText: ' + sum.toString())
 }
 
+let equalFunction = function () {
+    let sum;
+    numTwo = txtOutput;
+    console.log('numTwo: ' + numTwo.value);
+    console.log('(numOne & numTwo): ' + numOne.value + ' & ' + numTwo.value);
+
+    if (chosenFunction === 1) {
+        sum = parseInt(numOne.value) + parseInt(numTwo.value);
+        console.log('sum: ' + sum.toString());
+    }
+    else {
+        alert('Not plus')
+    }
+
+    txtOutput.innerText = sum.toString();
+    console.log('result.innerText: ' + sum.toString());
+}
+
+btnAddition.addEventListener('click', additionFunction);
+btnSubtraction.addEventListener('click', subtractionFunction);
+btnMultiplication.addEventListener('click', multiplicationFunction);
 btnDivision.addEventListener('click', divisionFunction);
+btnEquals.addEventListener('click', equalFunction);

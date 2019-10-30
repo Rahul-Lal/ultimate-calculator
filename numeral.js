@@ -1,10 +1,9 @@
-
 /*
     ALGORITHM:
     1.) Listen and capture all button events
-    2.) When clicked, insert number into 'txtOne'
+    2.) When clicked, insert number into Textbox
 */
-let txtOne = document.getElementById('txtOutput');
+// let txtOutput = document.getElementById('txtOutput');
 
 let btnOne = document.getElementById('btnOne');
 let btnTwo = document.getElementById('btnTwo');
@@ -18,34 +17,34 @@ let btnNine = document.getElementById('btnNine');
 let btnZero = document.getElementById('btnZero');
 
 let numberOne = function() {
-    txtOne.innerText += '1';
+    txtOutput.innerText += '1';
 }
 let numberTwo = function() {
-    txtOne.innerText += '2';  
+    txtOutput.innerText += '2';  
 }
 let numberThree = function() {
-    txtOne.innerText += '3';  
+    txtOutput.innerText += '3';  
 }
 let numberFour = function() {
-    txtOne.innerText += '4';  
+    txtOutput.innerText += '4';  
 }
 let numberFive = function() {
-    txtOne.innerText += '5';  
+    txtOutput.innerText += '5';  
 }
 let numberSix = function() {
-    txtOne.innerText += '6';  
+    txtOutput.innerText += '6';  
 }
 let numberSeven = function() {
-    txtOne.innerText += '7';  
+    txtOutput.innerText += '7';  
 }
 let numberEight = function() {
-    txtOne.innerText += '8';  
+    txtOutput.innerText += '8';  
 }
 let numberNine = function() {
-    txtOne.innerText += '9';  
+    txtOutput.innerText += '9';  
 }
 let numberZero = function() {
-    txtOne.innerText += '0';  
+    txtOutput.innerText += '0';  
 }
 
 btnOne.addEventListener('click', numberOne);
