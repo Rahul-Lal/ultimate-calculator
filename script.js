@@ -26,8 +26,8 @@
 alert('WELCOME');
 
 // Two values of textbox
-let numOne = "";
-let numTwo = "";
+let numOne;
+let numTwo;
 let chosenFunction = 0;
 
 const btnAddition = document.getElementById('btnAddition');
@@ -41,14 +41,12 @@ console.log(btnDivision);
 const btnEquals = document.getElementById('btnEquals');
 console.log(btnEquals);
 
-let txtOutput = document.getElementById('txtOutput');
-
 // Addition operations
 let additionFunction = function () {
         chosenFunction = 1;
         numOne = document.getElementById('txtOutput');
         console.log('numOne: ' + numOne.value);
-        txtOutput.innerText = '';
+        return numOne;
 }
 
 // Subtraction operations
@@ -100,8 +98,9 @@ let divisionFunction = function () {
 }
 
 let equalFunction = function () {
+    console.log("numOne: " + numOne.value);
     let sum;
-    numTwo = txtOutput;
+    numTwo = document.getElementById('txtOutput');
     console.log('numTwo: ' + numTwo.value);
     console.log('(numOne & numTwo): ' + numOne.value + ' & ' + numTwo.value);
 
@@ -115,6 +114,11 @@ let equalFunction = function () {
 
     txtOutput.innerText = sum.toString();
     console.log('result.innerText: ' + sum.toString());
+}
+
+let simpleAdditionFunction = function() {
+    additionFunction();
+    equal
 }
 
 btnAddition.addEventListener('click', additionFunction);

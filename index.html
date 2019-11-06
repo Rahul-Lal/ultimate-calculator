@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Web Calculator | Rahul Lal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" integrity="sha256-vK3UTo/8wHbaUn+dTQD0X6dzidqc5l7gczvH+Bnowwk=" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bulma.min.css">
 </head>
 <div class="center">
     <body>
-        <input id='txtOne' class='input' type='text' />
-        <br />
-        <input id='txtTwo' class='input' type='text' />
-
+        <textarea id='txtOutput' readonly class='output'></textarea>
+        
         <table>
             <td><button id="btnOne" class="numeral">1</button></td>
             <td><button id="btnTwo" class="numeral">2</button></td>
@@ -34,8 +34,6 @@
             <td><button id='btnDivision' class='function'>÷</button></td>
             <td><button id='btnEquals' class='function'><b>=</b></button></td>
         </table>
-
-        <textarea id='txtOutput' class='output'></textarea>
 </div>
 <script src="script.js"></script>
 <script src="numeral.js"></script>
