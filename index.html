@@ -6,33 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Web Calculator | Rahul Lal</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" integrity="sha256-vK3UTo/8wHbaUn+dTQD0X6dzidqc5l7gczvH+Bnowwk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"
+        integrity="sha256-vK3UTo/8wHbaUn+dTQD0X6dzidqc5l7gczvH+Bnowwk=" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bulma.min.css">
 </head>
 <div class="center">
+
     <body>
-        <textarea id='txtOutput' readonly class='output'></textarea>
-        
+        <textarea id='txtOutput' readonly class='input'></textarea>
+        <br />
         <table>
-            <td><button id="btnOne" class="numeral">1</button></td>
-            <td><button id="btnTwo" class="numeral">2</button></td>
-            <td><button id="btnThree" class="numeral">3</button></td>
-            <td><button id="btnFour" class="numeral">4</button></td>
-            <td><button id="btnFive" class="numeral">5</button></td>
-            <td><button id="btnSix" class="numeral">6</button></td>
-            <td><button id="btnSeven" class="numeral">7</button></td>
-            <td><button id="btnEight" class="numeral">8</button></td>
-            <td><button id="btnNine" class="numeral">9</button></td>
-            <td><button id="btnZero" class="numeral">0</button></td>
-        </table> 
-        
-        <table>
-            <td><button id='btnAddition' class='function'>+</button></td>
-            <td><button id='btnSubtraction' class='function'>-</button></td>
-            <td><button id='btnMultiplication' class='function'>x</button></td>
-            <td><button id='btnDivision' class='function'>÷</button></td>
-            <td><button id='btnEquals' class='function'><b>=</b></button></td>
+            <tr>
+                <td><button id="btnThree" class="button">3</button></td>
+                <td><button id="btnSix" class="button">6</button></td>
+                <td><button id="btnNine" class="button">9</button></td>
+            </tr>
+            <tr>
+                <td><button id="btnTwo" class="button">2</button></td>
+                <td><button id="btnFive" class="button">5</button></td>
+                <td><button id="btnEight" class="button">8</button></td>
+            </tr>
+            <tr>
+                <td><button id="btnOne" class="button">1</button></td>
+                <td><button id="btnFour" class="button">4</button></td>
+                <td><button id="btnSeven" class="button">7</button></td>
+            </tr>
+            <tr>
+                <td><button id='btnAddition' class='button is-dark'>+</button></td>
+                <td><button id='btnSubtraction' class='button is-dark'>-</button></td>
+                <td><button id='btnMultiplication' class='button is-dark'>x</button></td>
+            </tr>
+            <tr>
+                <td><button id="btnZero" class="button">0</button></td>
+                <td><button id="btnClear" class="button">0</button></td>
+                <td><button id='btnDivision' class='button is-dark'>÷</button></td>
+                <td><button id='btnEquals' class='button is-dark'><b>=</b></button></td>
+            </tr>
         </table>
 </div>
 <script src="script.js"></script>

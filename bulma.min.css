@@ -22,7 +22,7 @@
     }
 }
 
-.breadcrumb, .button, .delete, .file, .is-unselectable, .modal-close, .pagination-ellipsis, .pagination-link, .pagination-next, .pagination-previous, .tabs {
+.breadcrumb, .button, .function, .delete, .file, .is-unselectable, .modal-close, .pagination-ellipsis, .pagination-link, .pagination-next, .pagination-previous, .tabs {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -moz-user-select: none;
