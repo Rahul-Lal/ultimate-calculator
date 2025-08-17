@@ -12,7 +12,29 @@
     4.) 
 */
 
-alert('WELCOME')
+alert('WELCOME');
+let txtOne = document.getElementById('txtOne');
+let txtTwo = document.getElementById('txtTwo');
+let txtOutput = document.getElementById('txtOutput');
+
+//Equal operations
+btnEqual = document.getElementById('btnEqual');
+console.log(btnEqual);
+
+let equalFunction = function () {
+    alert('EQUAL');
+    console.log('EQUAL');
+    let numTwo = document.getElementById('txtOutput');
+    console.log('numTwo: ' + numTwo.value);
+    console.log('(numOne + numTwo): ' + numOne.value + numTwo.value);
+
+    let sum = parseInt(numOne.value) / parseInt(numTwo.value);
+    console.log('sum: ' + sum.toString());
+
+    let result = document.getElementById('txtOutput');
+    result.innerText = sum.toString();
+    console.log('result.innerText: ' + sum.toString())
+}
 
 // Addition operations
 btnAddition = document.getElementById('btnAddition');
@@ -20,13 +42,11 @@ console.log(btnAddition);
 
 let additionFunction = function () {
     alert('ADD');
-    console.log('ADD')
-
-    let numOne = document.getElementById('txtOne');
+    console.log('ADD');
+    
+    numOne = document.getElementById('txtOutput');
     console.log('numOne: ' + numOne.value);
-    let numTwo = document.getElementById('txtTwo');
-    console.log('numTwo: ' + numTwo.value);
-    console.log('(numOne + numTwo): ' + numOne.value + numTwo.value);
+    txtOutput.innerHTML = "";
 
     let sum = parseInt(numOne.value) + parseInt(numTwo.value);
     console.log('sum: ' + sum.toString());

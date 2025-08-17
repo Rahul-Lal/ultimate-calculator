@@ -4,7 +4,9 @@
     1.) Listen and capture all button events
     2.) When clicked, insert number into 'txtOne'
 */
-let txtOne = document.getElementById('txtOutput');
+let txtOne = document.getElementById('txtOne');
+let txtTwo = document.getElementById('txtTwo');
+let txtOutput = document.getElementById('txtOutput');
 
 let btnOne = document.getElementById('btnOne');
 let btnTwo = document.getElementById('btnTwo');
@@ -18,7 +20,7 @@ let btnNine = document.getElementById('btnNine');
 let btnZero = document.getElementById('btnZero');
 
 let numberOne = function() {
-    txtOne.innerText += '1';
+    txtOutput.innerText += '1';
 }
 let numberTwo = function() {
     txtOne.innerText += '2';  
