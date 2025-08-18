@@ -1,12 +1,10 @@
+let inpOutput = document.getElementById('txtOutput');
 
 /*
     ALGORITHM:
     1.) Listen and capture all button events
-    2.) When clicked, insert number into 'txtOne'
+    2.) When clicked, insert number into 'inpOutput'
 */
-let txtOne = document.getElementById('txtOne');
-let txtTwo = document.getElementById('txtTwo');
-let txtOutput = document.getElementById('txtOutput');
 
 let btnOne = document.getElementById('btnOne');
 let btnTwo = document.getElementById('btnTwo');
@@ -19,35 +17,44 @@ let btnEight = document.getElementById('btnEight');
 let btnNine = document.getElementById('btnNine');
 let btnZero = document.getElementById('btnZero');
 
-let numberOne = function() {
-    txtOutput.innerText += '1';
+function numberOne() {
+    inpOutput.value += "1";
 }
-let numberTwo = function() {
-    txtOne.innerText += '2';  
+
+function numberTwo() {
+    inpOutput.value += "2";
 }
-let numberThree = function() {
-    txtOne.innerText += '3';  
+
+function numberThree() {
+    inpOutput.value += "3";
 }
-let numberFour = function() {
-    txtOne.innerText += '4';  
+
+function numberFour() {
+    inpOutput.value += "4";
 }
-let numberFive = function() {
-    txtOne.innerText += '5';  
+
+function numberFive() {
+    inpOutput.value += "5";
 }
-let numberSix = function() {
-    txtOne.innerText += '6';  
+
+function numberSix() {
+    inpOutput.value += "6";
 }
-let numberSeven = function() {
-    txtOne.innerText += '7';  
+
+function numberSeven() {
+    inpOutput.value += "7";
 }
-let numberEight = function() {
-    txtOne.innerText += '8';  
+
+function numberEight() {
+    inpOutput.value += "8";
 }
-let numberNine = function() {
-    txtOne.innerText += '9';  
+
+function numberNine() {
+    inpOutput.value += "9";
 }
-let numberZero = function() {
-    txtOne.innerText += '0';  
+
+function numberZero() {
+    inpOutput.value += "0";
 }
 
 btnOne.addEventListener('click', numberOne);
