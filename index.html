@@ -9,31 +9,89 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <div class="center">
+
     <body>
-        <input id='txtOutput' class='input' type='text' readonly />
+        <input id='txtOutput' class='txtOutput' type='text' readonly />
         <br />
 
-        <table>
-            <td><button id="btnOne" class="numeral">1</button></td>
-            <td><button id="btnTwo" class="numeral">2</button></td>
-            <td><button id="btnThree" class="numeral">3</button></td>
-            <td><button id="btnFour" class="numeral">4</button></td>
-            <td><button id="btnFive" class="numeral">5</button></td>
-            <td><button id="btnSix" class="numeral">6</button></td>
-            <td><button id="btnSeven" class="numeral">7</button></td>
-            <td><button id="btnEight" class="numeral">8</button></td>
-            <td><button id="btnNine" class="numeral">9</button></td>
-            <td><button id="btnZero" class="numeral">0</button></td>
+        <table class="numerals">
+            <tr>
+                <td>
+                    <button id="btnSeven" class="numeral">7</button>
+                </td>
+                <td>
+                    <button id="btnEight" class="numeral">8</button>
+                </td>
+                <td>
+                    <button id="btnNine" class="numeral">9</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="btnFour" class="numeral">4</button>
+                </td>
+                <td>
+                    <button id="btnFive" class="numeral">5</button>
+                </td>
+                <td>
+                    <button id="btnSix" class="numeral">6</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="btnOne" class="numeral">1</button>
+                </td>
+                <td>
+                    <button id="btnTwo" class="numeral">2</button>
+                </td>
+                <td>
+                    <button id="btnThree" class="numeral">3</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="btnZero" class="numeral">0</button>
+                </td>
+                <td>
+                    <button id="btnDecimal" class="function">.</button>
+                </td>
+            </tr>
         </table>
 
-        <table>
-            <td><button id='btnAddition' class='function'>+</button></td>
-            <td><button id='btnSubtraction' class='function'>-</button></td>
-            <td><button id='btnMultiplication' class='function'>x</button></td>
-            <td><button id='btnDivision' class='function'>÷</button></td>
-            <td><button id='btnEqual' class='function'>=</button></td>
+        <table class="functions">
+            <tr>
+                <td>
+                    <button id='btnAddition' class='function'>+</button>
+                </td>
+                <td>
+                    <button id='btnSubtraction' class='function'>-</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id='btnMultiplication' class='function'>x</button>
+                </td>
+                <td>
+                    <button id='btnDivision' class='function'>÷</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="btnClear" class="function">C</button>
+                </td>
+                <td>
+                    <button id="btnClearEntry" class="function">CE</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id='btnEqual' class='equals'>=</button>
+                </td>
+            </tr>
         </table>
 </div>
+
+
 <script src="script.js"></script>
 <script src="numeral.js"></script>
 </body>
