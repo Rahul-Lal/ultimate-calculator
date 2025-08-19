@@ -1,131 +1,56 @@
-/*
-    - A JS Calculator
-    - Link to Tutorial: https://www.youtube.com/watch?v=UW6wxEyEO7g&list=WL&index=8&t=0s
-    - Date 20/10/2019
-*/
-
-/*
-    ALGORITHM:
-    1.) Listen and capture all button events
-    2.) When event occurs, depending on button, do +, -, x, /
-    3.) For any operation, I have to get values from text boxes too
-    4.) 
-*/
-
-alert('WELCOME');
-let txtOne = document.getElementById('txtOne');
-let txtTwo = document.getElementById('txtTwo');
 let txtOutput = document.getElementById('txtOutput');
 
-//Equal operations
-btnEqual = document.getElementById('btnEqual');
-console.log(btnEqual);
+let numOne = null;
+let numTwo = null;
+let functionType = null;
 
-let equalFunction = function () {
-    alert('EQUAL');
-    console.log('EQUAL');
-    let numTwo = document.getElementById('txtOutput');
-    console.log('numTwo: ' + numTwo.value);
-    console.log('(numOne + numTwo): ' + numOne.value + numTwo.value);
-
-    let sum = parseInt(numOne.value) / parseInt(numTwo.value);
-    console.log('sum: ' + sum.toString());
-
-    let result = document.getElementById('txtOutput');
-    result.innerText = sum.toString();
-    console.log('result.innerText: ' + sum.toString())
+function additionFunction() {
+    numOne = parseFloat(txtOutput.value);
+    functionType = 'Addition';
+    txtOutput.value = "";
 }
 
-// Addition operations
-btnAddition = document.getElementById('btnAddition');
-console.log(btnAddition);
-
-let additionFunction = function () {
-    alert('ADD');
-    console.log('ADD');
-    
-    numOne = document.getElementById('txtOutput');
-    console.log('numOne: ' + numOne.value);
-    txtOutput.innerHTML = "";
-
-    let sum = parseInt(numOne.value) + parseInt(numTwo.value);
-    console.log('sum: ' + sum.toString());
-
-    let result = document.getElementById('txtOutput');
-    result.innerText = sum.toString();
-    console.log('result.innerText: ' + sum.toString())
+function subtractionFunction() {
+    numOne = parseFloat(txtOutput.value);
+    functionType = 'Subtraction';
+    txtOutput.value = "";
 }
 
+function multiplicationFunction() {
+    numOne = parseFloat(txtOutput.value);
+    functionType = 'Multiplication';
+    txtOutput.value = "";
+}
+
+function divisionFunction() {
+    numOne = parseFloat(txtOutput.value);
+    functionType = 'Division';
+    txtOutput.value = "";
+}
+
+function equalFunction() {
+    numTwo = parseFloat(txtOutput.value);
+
+    let sum;
+    if(functionType === 'Addition'){
+        sum = numOne + numTwo;
+    }
+    else if(functionType === 'Subtraction'){
+        sum = numOne - numTwo;
+    }
+    else if(functionType === 'Multiplication'){
+        sum = numOne * numTwo;
+    }
+    else if(functionType === 'Division'){
+        sum = numOne / numTwo;
+    }
+
+    txtOutput.value = sum;
+}
+
+// Attach events
 btnAddition.addEventListener('click', additionFunction);
-
-// Subtraction operations
-btnSubtraction = document.getElementById('btnSubtraction');
-console.log(btnSubtraction);
-
-let subtractionFunction = function () {
-    alert('SUBTRACT');
-    console.log('SUBTRACT')
-
-    let numOne = document.getElementById('txtOne');
-    console.log('numOne: ' + numOne.value);
-    let numTwo = document.getElementById('txtTwo');
-    console.log('numTwo: ' + numTwo.value);
-    console.log('(numOne + numTwo): ' + numOne.value + numTwo.value);
-
-    let sum = parseInt(numOne.value) - parseInt(numTwo.value);
-    console.log('sum: ' + sum.toString());
-
-    let result = document.getElementById('txtOutput');
-    result.innerText = sum.toString();
-    console.log('result.innerText: ' + sum.toString())
-}
-
 btnSubtraction.addEventListener('click', subtractionFunction);
-
-// Multiplication operations
-btnMultiplication = document.getElementById('btnMultiplication')
-console.log(btnMultiplication);
-
-let multiplicationFunction = function () {
-    alert('MULTIPLY');
-    console.log('MULTIPLY')
-
-    let numOne = document.getElementById('txtOne');
-    console.log('numOne: ' + numOne.value);
-    let numTwo = document.getElementById('txtTwo');
-    console.log('numTwo: ' + numTwo.value);
-    console.log('(numOne + numTwo): ' + numOne.value + numTwo.value);
-
-    let sum = parseInt(numOne.value) * parseInt(numTwo.value);
-    console.log('sum: ' + sum.toString());
-
-    let result = document.getElementById('txtOutput');
-    result.innerText = sum.toString();
-    console.log('result.innerText: ' + sum.toString())
-}
-
 btnMultiplication.addEventListener('click', multiplicationFunction);
-
-// Division operations
-btnDivision = document.getElementById('btnDivision')
-console.log(btnDivision);
-
-let divisionFunction = function () {
-    alert('DIVIDE');
-    console.log('DIVIDE')
-
-    let numOne = document.getElementById('txtOne');
-    console.log('numOne: ' + numOne.value);
-    let numTwo = document.getElementById('txtTwo');
-    console.log('numTwo: ' + numTwo.value);
-    console.log('(numOne + numTwo): ' + numOne.value + numTwo.value);
-
-    let sum = parseInt(numOne.value) / parseInt(numTwo.value);
-    console.log('sum: ' + sum.toString());
-
-    let result = document.getElementById('txtOutput');
-    result.innerText = sum.toString();
-    console.log('result.innerText: ' + sum.toString())
-}
-
 btnDivision.addEventListener('click', divisionFunction);
+btnEqual.addEventListener('click', equalFunction);
