@@ -1,11 +1,22 @@
-.center
-{
-    width: 400px;
+.center {
+    width: 500px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    /* stack textbox above buttons */
+    align-items: center;
+    gap: 20px;
+    /* space between textbox and row of buttons */
 }
 
-button
-{
+.row {
+    display: flex;
+    /* number table + function table side by side */
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
     width: 100px;
     height: 50px;
     border: none;
@@ -14,38 +25,40 @@ button
     cursor: pointer;
 }
 
-button:hover
-{
+button:hover {
     background-color: #e0e0e0;
 }
 
-.txtOutput
-{
+.txtOutput {
     width: 100%;
+    /* match container width */
     height: 50px;
     border: 1px solid #ccc;
     font-size: 24px;
     text-align: right;
+    /* calculator-style text */
     padding: 5px;
 }
 
-.function
+/* .numerals
 {
+
+} */
+
+.function {
     background-color: #f9f9f9;
 }
 
-.function:hover
-{
+.function:hover {
     background-color: #f0f0f0;
 }
 
-.equals
-{
+.equals {
+    width: 200px;
     background-color: #4CAF50;
     color: white;
 }
 
-.equals:hover
-{
+.equals:hover {
     background-color: #45a049;
 }
