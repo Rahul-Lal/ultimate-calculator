@@ -1,4 +1,4 @@
-# Web Calculator
+# Ultimate Calculator
 
 
 <b>09/04/2019</b>: Initated web calculator project & respository on Github<br>
