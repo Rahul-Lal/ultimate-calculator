@@ -35,10 +35,14 @@
                 <tr>
                     <td><button id="btnZero" class="numeral">0</button></td>
                     <td><button id="btnDecimal" class="numeral" onclick="decimalFunction()">.</button></td>
+                    <td><button id="btnClearEntry" class="function">C</button></td>
                 </tr>
             </table>
 
             <table class="functions">
+                <tr>
+                    <td><button id="btnAllClear" class="function" onclick="clearFunction()">AC</button></td>
+                </tr>
                 <tr>
                     <td><button id="btnAddition" class="function">+</button></td>
                     <td><button id="btnSubtraction" class="function">-</button></td>
@@ -48,18 +52,15 @@
                     <td><button id="btnDivision" class="function">÷</button></td>
                 </tr>
                 <tr>
-                    <td><button id="btnClear" class="function" onclick="clearFunction()">C</button></td>
-                    <td><button id="btnClearEntry" class="function">CE</button></td>
-                </tr>
-                <tr>
                     <td colspan="2"><button id="btnEqual" class="equals">=</button></td>
+                    <td colspan="2"><button id="btnAdvance" class="numeral">Advance</button></td>
                 </tr>
             </table>
         </div>
     </div>
 
-    <script src="script.js"></script>
-    <script src="numeral.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/numeral.js"></script>
 </body>
 
 
