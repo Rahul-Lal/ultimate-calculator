@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Calculator | Rahul Lal</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="center">
+        <!-- Textbox on top -->
+        <input id="txtOutput" class="txtOutput" type="text" readonly />
+
+        <!-- Buttons below, side by side -->
+        <div class="row">
+            <table class="numerals">
+                <tr>
+                    <td><button id="btnSeven" class="numeral">7</button></td>
+                    <td><button id="btnEight" class="numeral">8</button></td>
+                    <td><button id="btnNine" class="numeral">9</button></td>
+                </tr>
+                <tr>
+                    <td><button id="btnFour" class="numeral">4</button></td>
+                    <td><button id="btnFive" class="numeral">5</button></td>
+                    <td><button id="btnSix" class="numeral">6</button></td>
+                </tr>
+                <tr>
+                    <td><button id="btnOne" class="numeral">1</button></td>
+                    <td><button id="btnTwo" class="numeral">2</button></td>
+                    <td><button id="btnThree" class="numeral">3</button></td>
+                </tr>
+                <tr>
+                    <td><button id="btnZero" class="numeral">0</button></td>
+                    <td><button id="btnDecimal" class="numeral" onclick="decimalFunction()">.</button></td>
+                </tr>
+            </table>
+
+            <table class="functions">
+                <tr>
+                    <td><button id="btnAddition" class="function">+</button></td>
+                    <td><button id="btnRandom" class="function" onclick="randomNumberFunction()">rand</button></td>
+                    <td><button id="btnPI" class="function" onclick="piFunction()">π</button></td>
+                </tr>
+                <tr>
+                    <td><button id="btnSubtraction" class="function">-</button></td>
+                    <td><button id="btnAllClear" class="function" onclick="clearFunction()">AC</button></td>
+                    <td><button id="btnClearEntry" class="function">C</button></td>
+                </tr>
+                <tr>
+                    <td><button id="btnMultiplication" class="function">×</button></td>
+                    <td colspan="2"><a href="../index.html"><button id="btnGoBack" class="equals">Go Back</button></a></td>
+                </tr>
+                <tr>
+                    <td><button id="btnDivision" class="function">÷</button></td>
+                    <td colspan="2"><button id="btnEqual" class="equals">=</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/numeral.js"></script>
+</body>
+
+
+</html>
