@@ -19,42 +19,57 @@ let btnZero = document.getElementById('btnZero');
 
 function numberOne() {
     inpOutput.value += "1";
+    console.log("txtOutput: " + inpOutput.value);
 }
 
 function numberTwo() {
     inpOutput.value += "2";
+    console.log("txtOutput: " + inpOutput.value);
 }
 
 function numberThree() {
     inpOutput.value += "3";
+    console.log("txtOutput: " + inpOutput.value);
 }
 
 function numberFour() {
     inpOutput.value += "4";
+    console.log("txtOutput: " + inpOutput.value);
 }
 
 function numberFive() {
     inpOutput.value += "5";
+    console.log("txtOutput: " + inpOutput.value);
 }
 
 function numberSix() {
     inpOutput.value += "6";
+    console.log("txtOutput: " + inpOutput.value);
 }
 
 function numberSeven() {
     inpOutput.value += "7";
+    console.log("txtOutput: " + inpOutput.value);
 }
 
 function numberEight() {
     inpOutput.value += "8";
+    console.log("txtOutput: " + inpOutput.value);
 }
 
 function numberNine() {
     inpOutput.value += "9";
+    console.log("txtOutput: " + inpOutput.value);
 }
 
 function numberZero() {
     inpOutput.value += "0";
+    console.log("txtOutput: " + inpOutput.value);
+}
+
+function decimalFunction() {
+    inpOutput.value += ".";
+    console.log("txtOutput: " + inpOutput.value);
 }
 
 btnOne.addEventListener('click', numberOne);
